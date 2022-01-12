@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>671</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0" rowspan="2">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QGroupBox" name="PortControlsBox">
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>串口设置</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="1" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="labelBaud">
+             <property name="text">
+              <string>波特率：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBaud">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>70</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="editable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="labelPort">
+             <property name="text">
+              <string>端口选择：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboPort">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>70</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="labelData">
+             <property name="text">
+              <string>数据位：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboData">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>70</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="4" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="labelParity">
+             <property name="text">
+              <string>校验位：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboParity">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>70</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="3" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLabel" name="labelStop">
+             <property name="text">
+              <string>停止位：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboStop">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>70</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="PlotControlsBox">
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>绘图设置</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QLabel" name="pointsLabel">
+             <property name="text">
+              <string>点  数：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinPoints">
+             <property name="minimumSize">
+              <size>
+               <width>82</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="minimum">
+              <number>0</number>
+             </property>
+             <property name="maximum">
+              <number>999999999</number>
+             </property>
+             <property name="value">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QLabel" name="labelYStep">
+             <property name="text">
+              <string>间  距：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinYStep">
+             <property name="minimumSize">
+              <size>
+               <width>82</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>69</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="maximum">
+              <number>999999999</number>
+             </property>
+             <property name="singleStep">
+              <number>1</number>
+             </property>
+             <property name="value">
+              <number>10</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>最小值：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinAxesMin">
+             <property name="minimumSize">
+              <size>
+               <width>82</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>69</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="minimum">
+              <number>-999999999</number>
+             </property>
+             <property name="maximum">
+              <number>999999999</number>
+             </property>
+             <property name="singleStep">
+              <number>1</number>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="3" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>最大值：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinAxesMax">
+             <property name="minimumSize">
+              <size>
+               <width>82</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>69</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="minimum">
+              <number>-999999999</number>
+             </property>
+             <property name="maximum">
+              <number>999999999</number>
+             </property>
+             <property name="singleStep">
+              <number>1</number>
+             </property>
+             <property name="value">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="4" column="0">
+          <widget class="QPushButton" name="pushButton_AutoScale">
+           <property name="text">
+            <string>Y轴自适应</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QListWidget" name="listWidget_Channels">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoScroll">
+            <bool>false</bool>
+           </property>
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="alternatingRowColors">
+            <bool>true</bool>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectItems</enum>
+           </property>
+           <property name="textElideMode">
+            <enum>Qt::ElideMiddle</enum>
+           </property>
+           <property name="resizeMode">
+            <enum>QListView::Adjust</enum>
+           </property>
+           <property name="modelColumn">
+            <number>0</number>
+           </property>
+           <property name="selectionRectVisible">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QPushButton" name="pushButton_ResetVisible">
+           <property name="text">
+            <string>复位视图</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QPushButton" name="savePNGButton">
+           <property name="text">
+            <string>保存当前视图为PNG图片</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="gridGroupBox">
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>接收设置</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButton_ClearRecv">
+           <property name="text">
+            <string>清除接收</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton_TextEditHide">
+           <property name="text">
+            <string>隐藏接收框</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="pushButton_ShowallData">
+           <property name="text">
+            <string>显示原始数据</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <widget class="QCustomPlot" name="plot" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QTextEdit" name="textEdit_UartWindow">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>140</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::TopToolBarArea</set>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionConnect"/>
+   <addaction name="actionPause_Plot"/>
+   <addaction name="actionDisconnect"/>
+   <addaction name="separator"/>
+   <addaction name="actionClear"/>
+   <addaction name="separator"/>
+   <addaction name="actionHow_to_use"/>
+   <addaction name="separator"/>
+   <addaction name="actionRecord_stream"/>
+  </widget>
+  <action name="actionConnect">
+   <property name="icon">
+    <iconset resource="res/serial_port_plotter.qrc">
+     <normaloff>:/serial_port_plotter/play_nor.png</normaloff>
+     <normalon>:/serial_port_plotter/play_nor.png</normalon>
+     <disabledoff>:/serial_port_plotter/play_dis.png</disabledoff>
+     <disabledon>:/serial_port_plotter/play_dis.png</disabledon>
+     <activeoff>:/serial_port_plotter/play_act.png</activeoff>
+     <activeon>:/serial_port_plotter/play_act.png</activeon>
+     <selectedoff>:/serial_port_plotter/play_act.png</selectedoff>
+     <selectedon>:/serial_port_plotter/play_act.png</selectedon>:/serial_port_plotter/play_nor.png</iconset>
+   </property>
+   <property name="text">
+    <string>Connect</string>
+   </property>
+   <property name="toolTip">
+    <string>打开端口</string>
+   </property>
+  </action>
+  <action name="actionPause_Plot">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res/serial_port_plotter.qrc">
+     <normaloff>:/serial_port_plotter/pause_nor.png</normaloff>
+     <normalon>:/serial_port_plotter/pause_nor.png</normalon>
+     <disabledoff>:/serial_port_plotter/pause_dis.png</disabledoff>
+     <disabledon>:/serial_port_plotter/pause_dis.png</disabledon>
+     <activeoff>:/serial_port_plotter/pause_act.png</activeoff>
+     <activeon>:/serial_port_plotter/pause_act.png</activeon>
+     <selectedoff>:/serial_port_plotter/pause_act.png</selectedoff>
+     <selectedon>:/serial_port_plotter/pause_act.png</selectedon>:/serial_port_plotter/pause_nor.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pause</string>
+   </property>
+   <property name="toolTip">
+    <string>暂停绘制</string>
+   </property>
+  </action>
+  <action name="actionDisconnect">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res/serial_port_plotter.qrc">
+     <normaloff>:/serial_port_plotter/stop_nor.png</normaloff>
+     <normalon>:/serial_port_plotter/stop_nor.png</normalon>
+     <disabledoff>:/serial_port_plotter/stop_dis.png</disabledoff>
+     <disabledon>:/serial_port_plotter/stop_dis.png</disabledon>
+     <activeoff>:/serial_port_plotter/stop_act.png</activeoff>
+     <activeon>:/serial_port_plotter/stop_act.png</activeon>
+     <selectedoff>:/serial_port_plotter/stop_act.png</selectedoff>
+     <selectedon>:/serial_port_plotter/stop_act.png</selectedon>:/serial_port_plotter/stop_nor.png</iconset>
+   </property>
+   <property name="text">
+    <string>Disconnect</string>
+   </property>
+   <property name="toolTip">
+    <string>关闭端口</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res/serial_port_plotter.qrc">
+     <normaloff>:/serial_port_plotter/clear_nor.png</normaloff>
+     <normalon>:/serial_port_plotter/clear_nor.png</normalon>
+     <disabledoff>:/serial_port_plotter/clear_dis.png</disabledoff>
+     <disabledon>:/serial_port_plotter/clear_dis.png</disabledon>
+     <activeoff>:/serial_port_plotter/clear_act.png</activeoff>
+     <activeon>:/serial_port_plotter/clear_act.png</activeon>
+     <selectedoff>:/serial_port_plotter/clear_act.png</selectedoff>
+     <selectedon>:/serial_port_plotter/clear_act.png</selectedon>:/serial_port_plotter/clear_nor.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+   <property name="toolTip">
+    <string>清除曲线</string>
+   </property>
+  </action>
+  <action name="actionHow_to_use">
+   <property name="icon">
+    <iconset resource="res/serial_port_plotter.qrc">
+     <normaloff>:/serial_port_plotter/help_nor.png</normaloff>
+     <normalon>:/serial_port_plotter/help_nor.png</normalon>
+     <disabledoff>:/serial_port_plotter/help_dis.png</disabledoff>
+     <disabledon>:/serial_port_plotter/help_dis.png</disabledon>
+     <activeoff>:/serial_port_plotter/help_act.png</activeoff>
+     <activeon>:/serial_port_plotter/help_act.png</activeon>
+     <selectedoff>:/serial_port_plotter/help_act.png</selectedoff>
+     <selectedon>:/serial_port_plotter/help_act.png</selectedon>:/serial_port_plotter/help_nor.png</iconset>
+   </property>
+   <property name="text">
+    <string>使用方法</string>
+   </property>
+  </action>
+  <action name="actionRecord_stream">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res/serial_port_plotter.qrc">
+     <normaloff>:/icons/line_icon_set/document.png</normaloff>
+     <normalon>:/icons/line_icon_set_text/document.png</normalon>
+     <disabledoff>:/icons/line_icon_set/document.png</disabledoff>:/icons/line_icon_set/document.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存为CSV文件</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;将收到的数据保存为CSV文件&lt;/p&gt;&lt;p&gt;（快捷键：Ctrl+S）&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header location="global">qcustomplot/qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res/serial_port_plotter.qrc"/>
+ </resources>
+ <connections/>
+</ui>
